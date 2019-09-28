@@ -23,6 +23,10 @@ app.get('/', function(request, response) {
     response.render('home.html');
 });
 
+app.get('/browse', function(request, response) {
+    response.render('browse.html');
+});
+
 // --- START THE SERVER 
 var server = app.listen((process.env.PORT || 8080), function(){
     console.log("Listening on port %d", server.address().port);
