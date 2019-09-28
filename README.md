@@ -1,6 +1,6 @@
 # SSUI Assignment 5: Bun Bun Shop Prototype
 
-The website is hosted live on heroku: [https://bun-bun-bake-shop.herokuapp.com/](here).
+The website is hosted live on heroku: [here](https://bun-bun-bake-shop.herokuapp.com/).
 (Also note that Heroku is a bit slow when initially pinged since the "dyno" is asleep on free accounts.)
 
 ### Additional Libraries/Frameworks Used
