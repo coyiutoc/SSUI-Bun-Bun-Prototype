@@ -94,6 +94,10 @@ body, html {
   border: 2px solid white !important;
 }
 
+.img-container {
+  border: 1px solid grey;
+}
+
 .item-grid {
   display: grid;
   height: 100vh;

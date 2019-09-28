@@ -8,6 +8,7 @@ $( document ).ready(function() {
   var quantity = 1;
   var total = parseFloat(price.substring(1)).toFixed(2);
 
+  let total_rating = BUN_DATA[id].total_rating;
   let rating_string = get_star_string(BUN_DATA[id].rating);
 
   let html = `
@@ -15,15 +16,16 @@ $( document ).ready(function() {
         <img src=${img_url}></img>
       </div>
       <div class = "item-content">
-        <div style="padding-bottom: 2vh">
-          ${rating_string}
+        <div style="padding-bottom: 4vh">
+          <div style="float: left">${rating_string}</div>
+          <span style="float: right; color: grey; font-size: 0.8rem">(${total_rating} reviews)</span>
         </div>
         <h2>${name}</h2>
         <span class="price">${price}/pc</span>
         <br><br>
         <p>${description}</p>
         <div class="form-group">
-          <label for="quantity">Select quantity:</label>
+          <label for="quantity"><b>Quantity:</b></label>
           <select class="form-control" id="quantity">
             <option>1</option>
             <option>2</option>
@@ -32,7 +34,7 @@ $( document ).ready(function() {
           </select>
         </div>
         <div class="form-group">
-          <label for="glazing">Select glazing:</label>
+          <label for="glazing"><b>Glazing:</b></label>
           <select class="form-control" id="glazing">
             <option>None</option>
             <option>Sugar-milk</option>
