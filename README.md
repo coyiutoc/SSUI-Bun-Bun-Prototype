@@ -6,6 +6,7 @@ The website is hosted live on heroku: [https://bun-bun-bake-shop.herokuapp.com/]
 ### Additional Libraries/Frameworks Used
 
 - Node (Express + EJS)
+- JQuery
 - Bootstrap
 
 ### Bonus Work
