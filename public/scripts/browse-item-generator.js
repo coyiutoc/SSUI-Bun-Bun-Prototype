@@ -13,12 +13,12 @@ $( document ).ready(function() {
     	let style = BUN_DATA[key].style_position;
 
     	let html = `
-    		<div id = "${id}" class = "browse-item" style = "${style}">
+    		<div id = "${id}" class = "browse-item" style = "${style}" onclick="location.href='/item/${id}'">
 	          <img src=${img_url}>
 	          <div class = "content">
 	            <h3>${name}</h3>
 	            <br>
-	            <span class="price">${price}/pc</span>
+	            <span class="item-price">${price}/pc</span>
 	            <br>
 	            ${star_string}
 	            <span class="reviews">(${total_rating} reviews)</span>

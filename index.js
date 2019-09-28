@@ -27,6 +27,11 @@ app.get('/browse', function(request, response) {
     response.render('browse.html');
 });
 
+app.get('/item/:flavor', function(request, response) {
+	let keys = {flavor: request.params.flavor};
+    response.render('item.html', keys);
+});
+
 // --- START THE SERVER 
 var server = app.listen((process.env.PORT || 8080), function(){
     console.log("Listening on port %d", server.address().port);

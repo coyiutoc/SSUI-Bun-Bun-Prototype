@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('header'); %>
+
+    <title>Bun Bun Bake Shop</title>
+
+    <script src="../scripts/data.js"></script>
+    <script src="../scripts/item-content-generator.js"></script>
+    <script src="../scripts/browse-item-generator.js"></script>
+</head>
+
+  <script type = "text/javascript">
+
+      // Routing params from EJS:
+      var FLAVOR = "<%= flavor %>";
+
+    </script>
+
+  <body style="padding-top: 10vh">
+    <div class = "container">
+      <div id = "item-grid" class = "item-grid">
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      
+        <div class="modal-content">
+          <div class="modal-header">
+            <div></div>
+            <span style="float:right"><button type="button" class="close" data-dismiss="modal">&times;</button></span>
+          </div>
+          <div class="modal-body">
+            <h2>Item Added to Cart!</h2>
+            <p>The following item was added to your cart:</p>
+            <br>
+            <div id = "item-summary">
+            </div>
+            <br>
+            <br>
+            <button style="float: left" type="button" class="btn btn-outline-danger" onclick="location.href='/browse'">Continue Browsing</button>
+            <span style="float:right">
+              <button type="button" class="btn btn-success">Go to Cart</button>
+            </span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+  </body> 
+
+  <%- include('footer'); %>
+
+</html>
